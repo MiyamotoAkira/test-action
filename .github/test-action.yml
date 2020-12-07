@@ -1,0 +1,22 @@
+name: Sync workflows for GHES
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "This is one step"
+    - run: |
+        echo "This is another step"
+  second:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "This is the third step"
+    - run: |
+        echo "This is a fourth step"
